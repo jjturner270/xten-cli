@@ -1,0 +1,19 @@
+[project]
+name = "xten-cli"
+version = "0.1.0"
+description = "Local-first media utility CLI"
+authors = [{ name = "Jonathan Turner" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "typer[all]",
+    "rich"
+]
+
+[project.scripts]
+xten = "xten.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
