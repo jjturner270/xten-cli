@@ -1,5 +1,7 @@
 import typer
 from xten.commands.compress import compress
+from xten.commands.compress import compress
+from xten.commands.info import info
 
 __version__ = "0.1.0"
 
@@ -13,7 +15,8 @@ def main(
 ):
     if version:
         typer.echo(f"xten {__version__}")
-        raise typer.Exit()
+        raise typer.Exit(code=1)
 
 
 app.command(name="compress")(compress)
+app.command(name="info")(info)

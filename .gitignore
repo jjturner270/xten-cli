@@ -48,3 +48,6 @@ Thumbs.db
 
 # Local config
 .env
+
+# Test Files
+media/
