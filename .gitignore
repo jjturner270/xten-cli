@@ -23,7 +23,7 @@ venv/
 .venv/
 env/
 ENV/
-.testpypi-venv/
+testpypi-venv/
 
 # Pytest
 .pytest_cache/
