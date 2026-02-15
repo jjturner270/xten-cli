@@ -2,6 +2,7 @@ import typer
 from xten.commands.compress import compress
 from xten.commands.compress import compress
 from xten.commands.info import info
+from xten.commands.trim import trim
 
 __version__ = "0.1.0"
 
@@ -20,3 +21,4 @@ def main(
 
 app.command(name="compress")(compress)
 app.command(name="info")(info)
+app.command(name="trim")(trim)
