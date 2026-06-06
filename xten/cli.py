@@ -22,3 +22,8 @@ def main(
 app.command(name="compress")(compress)
 app.command(name="info")(info)
 app.command(name="trim")(trim)
+
+@app.command(name="record")
+def record(args):
+    # Placeholder for screen recording logic
+    pass
